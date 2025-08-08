@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#E0F6FF"/>
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5E5E5"/>
+      <stop offset="50%" style="stop-color:#F5F5F5"/>
+      <stop offset="100%" style="stop-color:#D5D5D5"/>
+    </linearGradient>
+    <linearGradient id="craneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
+    </linearGradient>
+    <pattern id="concrete" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#F0F0F0"/>
+      <circle cx="2" cy="2" r="0.5" fill="#E0E0E0"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="#8B7355"/>
+  
+  <!-- Construction site base -->
+  <rect y="450" width="800" height="150" fill="#A0936B"/>
+  
+  <!-- Main building under construction -->
+  <rect x="200" y="200" width="300" height="250" fill="url(#buildingGradient)" stroke="#C0C0C0" stroke-width="2"/>
+  
+  <!-- Building floors (concrete slabs) -->
+  <rect x="200" y="250" width="300" height="8" fill="url(#concrete)"/>
+  <rect x="200" y="300" width="300" height="8" fill="url(#concrete)"/>
+  <rect x="200" y="350" width="300" height="8" fill="url(#concrete)"/>
+  <rect x="200" y="400" width="300" height="8" fill="url(#concrete)"/>
+  
+  <!-- Vertical columns -->
+  <rect x="220" y="200" width="12" height="250" fill="#C0C0C0"/>
+  <rect x="280" y="200" width="12" height="250" fill="#C0C0C0"/>
+  <rect x="340" y="200" width="12" height="250" fill="#C0C0C0"/>
+  <rect x="400" y="200" width="12" height="250" fill="#C0C0C0"/>
+  <rect x="460" y="200" width="12" height="250" fill="#C0C0C0"/>
+  
+  <!-- Construction crane -->
+  <rect x="580" y="100" width="15" height="350" fill="url(#craneGradient)"/>
+  <rect x="520" y="95" width="150" height="10" fill="url(#craneGradient)"/>
+  <rect x="585" y="90" width="5" height="20" fill="#FF6B35"/>
+  
+  <!-- Crane hook and cables -->
+  <line x1="650" y1="105" x2="650" y2="200" stroke="#333" stroke-width="2"/>
+  <rect x="645" y="200" width="10" height="8" fill="#FF6B35"/>
+  
+  <!-- Construction materials -->
+  <rect x="100" y="420" width="40" height="30" fill="#8B4513"/>
+  <rect x="150" y="430" width="30" height="20" fill="#8B4513"/>
+  <circle cx="80" cy="440" r="15" fill="#696969"/>
+  <circle cx="110" cy="435" r="12" fill="#696969"/>
+  
+  <!-- Construction vehicles -->
+  <rect x="550" y="430" width="60" height="20" fill="#FFD700" rx="3"/>
+  <circle cx="560" cy="455" r="8" fill="#333"/>
+  <circle cx="630" cy="455" r="8" fill="#333"/>
+  <rect x="555" y="420" width="15" height="15" fill="#FF6B35"/>
+  
+  <!-- Workers (simplified) -->
+  <circle cx="320" cy="440" r="5" fill="#FDBCB4"/>
+  <rect x="315" y="445" width="10" height="15" fill="#FF6B35"/>
+  <rect x="313" y="450" width="14" height="8" fill="#4169E1"/>
+  
+  <circle cx="280" cy="335" r="5" fill="#FDBCB4"/>
+  <rect x="275" y="340" width="10" height="15" fill="#FF6B35"/>
+  <rect x="273" y="345" width="14" height="8" fill="#4169E1"/>
+  
+  <!-- Safety barriers -->
+  <rect x="150" y="445" width="2" height="15" fill="#FF6B35"/>
+  <rect x="160" y="445" width="2" height="15" fill="#FF6B35"/>
+  <rect x="170" y="445" width="2" height="15" fill="#FF6B35"/>
+  <rect x="152" y="452" width="20" height="2" fill="#FF6B35"/>
+  
+  <!-- Scaffolding -->
+  <rect x="190" y="250" width="8" height="200" fill="#C0C0C0" opacity="0.7"/>
+  <rect x="502" y="280" width="8" height="170" fill="#C0C0C0" opacity="0.7"/>
+  <rect x="192" y="300" width="316" height="3" fill="#C0C0C0" opacity="0.7"/>
+  <rect x="192" y="350" width="316" height="3" fill="#C0C0C0" opacity="0.7"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="80" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="170" cy="75" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="600" cy="100" rx="35" ry="18" fill="white" opacity="0.8"/>
+  <ellipse cx="620" cy="95" rx="28" ry="14" fill="white" opacity="0.8"/>
+  
+  <!-- Safety signs -->
+  <rect x="120" y="400" width="20" height="20" fill="#FF6B35"/>
+  <text x="130" y="415" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">⚠</text>
+</svg>

@@ -1,0 +1,190 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="contemporaryHouseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F8FF"/>
+      <stop offset="50%" style="stop-color:#E6E6FA"/>
+      <stop offset="100%" style="stop-color:#D8BFD8"/>
+    </linearGradient>
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887"/>
+      <stop offset="50%" style="stop-color:#D2B48C"/>
+      <stop offset="100%" style="stop-color:#BC9A6A"/>
+    </linearGradient>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="50%" style="stop-color:#B0E0E6"/>
+      <stop offset="100%" style="stop-color:#4682B4"/>
+    </linearGradient>
+    <linearGradient id="eveningSkyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7F50"/>
+      <stop offset="50%" style="stop-color:#FFB6C1"/>
+      <stop offset="100%" style="stop-color:#F0F8FF"/>
+    </linearGradient>
+    <linearGradient id="modernLandscapeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#32CD32"/>
+      <stop offset="100%" style="stop-color:#228B22"/>
+    </linearGradient>
+    <radialGradient id="modernPoolGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#00CED1"/>
+      <stop offset="100%" style="stop-color:#008B8B"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Evening sky -->
+  <rect width="800" height="350" fill="url(#eveningSkyGradient)"/>
+  
+  <!-- Landscape -->
+  <rect y="350" width="800" height="250" fill="url(#modernLandscapeGradient)"/>
+  
+  <!-- Modern driveway -->
+  <rect x="300" y="500" width="200" height="100" fill="#708090"/>
+  <rect x="310" y="510" width="5" height="80" fill="#C0C0C0"/>
+  <rect x="320" y="510" width="5" height="80" fill="#C0C0C0"/>
+  <rect x="330" y="510" width="5" height="80" fill="#C0C0C0"/>
+  <rect x="340" y="510" width="5" height="80" fill="#C0C0C0"/>
+  
+  <!-- Main contemporary house -->
+  <rect x="200" y="160" width="400" height="190" fill="url(#contemporaryHouseGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  
+  <!-- Flat modern roof -->
+  <rect x="190" y="150" width="420" height="20" fill="#2F4F4F"/>
+  
+  <!-- Wood accent panels -->
+  <rect x="150" y="200" width="50" height="150" fill="url(#woodGradient)"/>
+  <rect x="600" y="180" width="50" height="170" fill="url(#woodGradient)"/>
+  
+  <!-- Floor-to-ceiling windows -->
+  <rect x="220" y="180" width="120" height="170" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="3"/>
+  <rect x="360" y="180" width="80" height="170" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="3"/>
+  <rect x="460" y="180" width="120" height="170" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="3"/>
+  
+  <!-- Window frames -->
+  <rect x="235" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="255" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="275" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="295" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="315" y="175" width="2" height="180" fill="#2F4F4F"/>
+  
+  <rect x="475" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="495" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="515" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="535" y="175" width="2" height="180" fill="#2F4F4F"/>
+  <rect x="555" y="175" width="2" height="180" fill="#2F4F4F"/>
+  
+  <!-- Modern entrance -->
+  <rect x="380" y="280" width="40" height="70" fill="url(#woodGradient)" stroke="#8B4513" stroke-width="2"/>
+  <rect x="385" y="290" width="30" height="60" fill="#2F4F4F"/>
+  <rect x="410" y="315" width="4" height="2" fill="#C0C0C0"/>
+  
+  <!-- Entrance overhang -->
+  <rect x="350" y="270" width="100" height="8" fill="#2F4F4F"/>
+  <rect x="355" y="260" width="90" height="15" fill="url(#glassGradient)" opacity="0.6"/>
+  
+  <!-- Second floor extension -->
+  <rect x="250" y="80" width="200" height="80" fill="url(#contemporaryHouseGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  <rect x="245" y="75" width="210" height="10" fill="#2F4F4F"/>
+  
+  <!-- Second floor windows -->
+  <rect x="270" y="100" width="40" height="40" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="320" y="100" width="40" height="40" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="370" y="100" width="40" height="40" fill="url(#glassGradient)" opacity="0.8" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Modern pool -->
+  <ellipse cx="680" cy="450" rx="80" ry="50" fill="url(#modernPoolGradient)"/>
+  <ellipse cx="680" cy="445" rx="70" ry="40" fill="#00CED1" opacity="0.9"/>
+  
+  <!-- Pool deck -->
+  <rect x="590" y="420" width="180" height="15" fill="#F5DEB3"/>
+  <rect x="590" y="435" width="180" height="65" fill="#F5DEB3"/>
+  
+  <!-- Modern outdoor furniture -->
+  <rect x="620" y="410" width="25" height="15" fill="#2F4F4F"/>
+  <rect x="650" y="410" width="25" height="15" fill="#2F4F4F"/>
+  <rect x="615" y="395" width="35" height="5" fill="#F5DEB3"/>
+  
+  <!-- Modern landscaping -->
+  <circle cx="100" cy="420" r="30" fill="#228B22"/>
+  <circle cx="85" cy="405" r="18" fill="#32CD32"/>
+  <rect x="95" y="390" width="10" height="50" fill="#8B4513"/>
+  
+  <circle cx="120" cy="480" r="25" fill="#228B22"/>
+  <circle cx="105" cy="470" r="15" fill="#32CD32"/>
+  <rect x="115" y="460" width="8" height="40" fill="#8B4513"/>
+  
+  <!-- Geometric planters -->
+  <rect x="510" y="380" width="40" height="20" fill="#D3D3D3"/>
+  <rect x="515" y="370" width="30" height="15" fill="#228B22"/>
+  
+  <rect x="120" y="390" width="35" height="15" fill="#D3D3D3"/>
+  <rect x="125" y="385" width="25" height="10" fill="#32CD32"/>
+  
+  <!-- Modern lighting -->
+  <rect x="180" y="340" width="4" height="25" fill="#2F4F4F"/>
+  <circle cx="182" cy="335" r="8" fill="#FFD700" opacity="0.7"/>
+  
+  <rect x="620" y="340" width="4" height="25" fill="#2F4F4F"/>
+  <circle cx="622" cy="335" r="8" fill="#FFD700" opacity="0.7"/>
+  
+  <!-- Pathway lights -->
+  <circle cx="350" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="370" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="390" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="410" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="430" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="450" cy="480" r="3" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Modern garage -->
+  <rect x="50" y="250" width="100" height="100" fill="url(#contemporaryHouseGradient)" stroke="#D3D3D3" stroke-width="2"/>
+  <rect x="45" y="245" width="110" height="10" fill="#2F4F4F"/>
+  <rect x="70" y="290" width="60" height="60" fill="#2F4F4F"/>
+  
+  <!-- Solar panels -->
+  <rect x="220" y="155" width="25" height="15" fill="#191970" opacity="0.9"/>
+  <rect x="250" y="155" width="25" height="15" fill="#191970" opacity="0.9"/>
+  <rect x="280" y="155" width="25" height="15" fill="#191970" opacity="0.9"/>
+  <rect x="310" y="155" width="25" height="15" fill="#191970" opacity="0.9"/>
+  <rect x="340" y="155" width="25" height="15" fill="#191970" opacity="0.9"/>
+  
+  <!-- Modern water feature -->
+  <rect x="500" y="380" width="60" height="40" fill="#4682B4" opacity="0.8"/>
+  <circle cx="530" cy="400" r="8" fill="#E0F6FF"/>
+  <circle cx="530" cy="395" r="3" fill="white" opacity="0.9"/>
+  
+  <!-- Contemporary art sculpture -->
+  <rect x="150" y="450" width="8" height="30" fill="#C0C0C0"/>
+  <circle cx="154" cy="445" r="10" fill="#FFD700"/>
+  <polygon points="144,440 164,440 154,420" fill="#C0C0C0"/>
+  
+  <!-- Electric car charging station -->
+  <rect x="280" y="520" width="8" height="20" fill="#32CD32"/>
+  <rect x="276" y="515" width="16" height="8" fill="#228B22"/>
+  <circle cx="284" cy="510" r="4" fill="#FFD700"/>
+  
+  <!-- Modern fence -->
+  <rect x="40" y="380" width="4" height="40" fill="#2F4F4F"/>
+  <rect x="50" y="380" width="4" height="40" fill="#2F4F4F"/>
+  <rect x="60" y="380" width="4" height="40" fill="#2F4F4F"/>
+  <rect x="70" y="380" width="4" height="40" fill="#2F4F4F"/>
+  <rect x="42" y="395" width="30" height="2" fill="#2F4F4F"/>
+  <rect x="42" y="405" width="30" height="2" fill="#2F4F4F"/>
+  
+  <!-- Evening lighting effects -->
+  <rect x="220" y="175" width="125" height="3" fill="#FFD700" opacity="0.4"/>
+  <rect x="460" y="175" width="125" height="3" fill="#FFD700" opacity="0.4"/>
+  <rect x="380" y="275" width="45" height="2" fill="#FFD700" opacity="0.3"/>
+  
+  <!-- Window interior lighting -->
+  <rect x="225" y="190" width="110" height="2" fill="#FFD700" opacity="0.6"/>
+  <rect x="465" y="190" width="110" height="2" fill="#FFD700" opacity="0.6"/>
+  <rect x="275" y="110" width="30" height="2" fill="#FFD700" opacity="0.6"/>
+  <rect x="375" y="110" width="30" height="2" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Reflections in glass -->
+  <rect x="230" y="190" width="15" height="30" fill="white" opacity="0.3"/>
+  <rect x="470" y="190" width="15" height="30" fill="white" opacity="0.3"/>
+  <rect x="280" y="110" width="8" height="15" fill="white" opacity="0.3"/>
+  
+  <!-- Wispy evening clouds -->
+  <ellipse cx="200" cy="80" rx="50" ry="20" fill="white" opacity="0.6"/>
+  <ellipse cx="600" cy="100" rx="60" ry="25" fill="white" opacity="0.6"/>
+</svg>

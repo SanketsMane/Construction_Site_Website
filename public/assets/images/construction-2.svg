@@ -1,0 +1,186 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="constructionSkyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB347"/>
+      <stop offset="100%" style="stop-color:#FFF8DC"/>
+    </linearGradient>
+    <linearGradient id="steelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0"/>
+      <stop offset="50%" style="stop-color:#A9A9A9"/>
+      <stop offset="100%" style="stop-color:#808080"/>
+    </linearGradient>
+    <linearGradient id="craneArmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6347"/>
+      <stop offset="100%" style="stop-color:#CD5C5C"/>
+    </linearGradient>
+    <pattern id="concreteTexture" patternUnits="userSpaceOnUse" width="6" height="6">
+      <rect width="6" height="6" fill="#F5F5F5"/>
+      <circle cx="2" cy="2" r="0.5" fill="#E0E0E0"/>
+      <circle cx="4" cy="4" r="0.5" fill="#E0E0E0"/>
+    </pattern>
+    <pattern id="steelTexture" patternUnits="userSpaceOnUse" width="8" height="2">
+      <rect width="8" height="2" fill="#C0C0C0"/>
+      <rect width="8" height="0.5" fill="#A9A9A9"/>
+    </pattern>
+  </defs>
+  
+  <!-- Dawn/Dusk sky -->
+  <rect width="800" height="380" fill="url(#constructionSkyGradient)"/>
+  
+  <!-- City skyline in background -->
+  <rect x="50" y="280" width="30" height="100" fill="#696969" opacity="0.6"/>
+  <rect x="90" y="250" width="25" height="130" fill="#696969" opacity="0.6"/>
+  <rect x="120" y="270" width="35" height="110" fill="#696969" opacity="0.6"/>
+  <rect x="680" y="260" width="40" height="120" fill="#696969" opacity="0.6"/>
+  <rect x="730" y="240" width="30" height="140" fill="#696969" opacity="0.6"/>
+  
+  <!-- Construction site ground -->
+  <rect y="380" width="800" height="220" fill="#CD853F"/>
+  
+  <!-- Construction site base with tracks -->
+  <rect y="420" width="800" height="180" fill="#A0826D"/>
+  <rect x="0" y="440" width="800" height="4" fill="#8B7355"/>
+  <rect x="0" y="460" width="800" height="4" fill="#8B7355"/>
+  <rect x="0" y="480" width="800" height="4" fill="#8B7355"/>
+  
+  <!-- Main building structure - high-rise under construction -->
+  <rect x="300" y="80" width="200" height="320" fill="url(#concreteTexture)" stroke="#A9A9A9" stroke-width="2"/>
+  
+  <!-- Floor slabs -->
+  <rect x="280" y="120" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="160" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="200" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="240" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="280" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="320" width="240" height="12" fill="url(#steelTexture)"/>
+  <rect x="280" y="360" width="240" height="12" fill="url(#steelTexture)"/>
+  
+  <!-- Vertical steel columns -->
+  <rect x="290" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="330" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="370" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="410" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="450" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="490" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  <rect x="510" y="80" width="8" height="320" fill="url(#steelGradient)"/>
+  
+  <!-- Rebar reinforcement -->
+  <rect x="295" y="85" width="2" height="310" fill="#8B4513"/>
+  <rect x="335" y="85" width="2" height="310" fill="#8B4513"/>
+  <rect x="375" y="85" width="2" height="310" fill="#8B4513"/>
+  <rect x="415" y="85" width="2" height="310" fill="#8B4513"/>
+  
+  <!-- Tower crane -->
+  <rect x="600" y="60" width="18" height="340" fill="url(#craneArmGradient)"/>
+  <rect x="540" y="50" width="200" height="15" fill="url(#craneArmGradient)"/>
+  <rect x="520" y="45" width="40" height="8" fill="url(#craneArmGradient)"/>
+  
+  <!-- Crane hook and load -->
+  <line x1="680" y1="65" x2="680" y2="150" stroke="#333" stroke-width="3"/>
+  <rect x="670" y="150" width="20" height="15" fill="#8B4513"/>
+  <rect x="675" y="140" width="10" height="10" fill="#FF6347"/>
+  
+  <!-- Counter weight -->
+  <rect x="530" y="40" width="25" height="20" fill="#2F4F4F"/>
+  
+  <!-- Crane operator cab -->
+  <rect x="605" y="40" width="20" height="15" fill="#4682B4" opacity="0.7"/>
+  
+  <!-- Construction vehicles -->
+  <!-- Concrete mixer truck -->
+  <rect x="150" y="460" width="90" height="35" fill="#FFD700" rx="5"/>
+  <circle cx="170" cy="505" r="12" fill="#1C1C1C"/>
+  <circle cx="220" cy="505" r="12" fill="#1C1C1C"/>
+  <circle cx="170" cy="505" r="6" fill="#C0C0C0"/>
+  <circle cx="220" cy="505" r="6" fill="#C0C0C0"/>
+  <circle cx="195" cy="445" r="20" fill="#D3D3D3"/>
+  
+  <!-- Excavator -->
+  <rect x="50" y="470" width="80" height="25" fill="#FF6347" rx="3"/>
+  <rect x="40" y="460" width="30" height="15" fill="#FF6347"/>
+  <rect x="35" y="455" width="20" height="10" fill="#8B4513"/>
+  <circle cx="70" cy="505" r="10" fill="#1C1C1C"/>
+  <circle cx="110" cy="505" r="10" fill="#1C1C1C"/>
+  
+  <!-- Dump truck -->
+  <rect x="550" y="465" width="100" height="30" fill="#4169E1" rx="5"/>
+  <rect x="555" y="455" width="90" height="20" fill="#87CEEB"/>
+  <circle cx="575" cy="505" r="12" fill="#1C1C1C"/>
+  <circle cx="625" cy="505" r="12" fill="#1C1C1C"/>
+  <circle cx="575" cy="505" r="6" fill="#C0C0C0"/>
+  <circle cx="625" cy="505" r="6" fill="#C0C0C0"/>
+  
+  <!-- Construction workers -->
+  <circle cx="350" cy="385" r="8" fill="#FDBCB4"/>
+  <rect x="342" y="393" width="16" height="20" fill="#FF6347"/>
+  <rect x="340" y="403" width="20" height="15" fill="#4169E1"/>
+  <rect x="346" y="375" width="8" height="15" fill="#FFD700"/>
+  
+  <circle cx="450" cy="385" r="8" fill="#FDBCB4"/>
+  <rect x="442" y="393" width="16" height="20" fill="#FF6347"/>
+  <rect x="440" y="403" width="20" height="15" fill="#4169E1"/>
+  <rect x="446" y="375" width="8" height="15" fill="#FFD700"/>
+  
+  <circle cx="320" cy="265" r="6" fill="#FDBCB4"/>
+  <rect x="314" y="271" width="12" height="15" fill="#FF6347"/>
+  <rect x="312" y="281" width="16" height="12" fill="#4169E1"/>
+  
+  <!-- Safety equipment and materials -->
+  <rect x="180" y="450" width="50" height="30" fill="#8B4513"/>
+  <rect x="185" y="440" width="15" height="15" fill="#8B4513"/>
+  <rect x="205" y="440" width="15" height="15" fill="#8B4513"/>
+  <rect x="225" y="440" width="15" height="15" fill="#8B4513"/>
+  
+  <!-- Steel reinforcement bars -->
+  <rect x="250" y="470" width="3" height="40" fill="#8B4513"/>
+  <rect x="255" y="470" width="3" height="40" fill="#8B4513"/>
+  <rect x="260" y="470" width="3" height="40" fill="#8B4513"/>
+  <rect x="265" y="470" width="3" height="40" fill="#8B4513"/>
+  
+  <!-- Concrete blocks -->
+  <rect x="480" y="480" width="15" height="15" fill="#D3D3D3"/>
+  <rect x="500" y="480" width="15" height="15" fill="#D3D3D3"/>
+  <rect x="490" y="465" width="15" height="15" fill="#D3D3D3"/>
+  
+  <!-- Safety barriers and signs -->
+  <rect x="120" y="425" width="3" height="20" fill="#FF6347"/>
+  <rect x="130" y="425" width="3" height="20" fill="#FF6347"/>
+  <rect x="140" y="425" width="3" height="20" fill="#FF6347"/>
+  <rect x="122" y="435" width="20" height="3" fill="#FF6347"/>
+  
+  <!-- Warning signs -->
+  <rect x="280" y="410" width="25" height="25" fill="#FFD700"/>
+  <text x="292" y="430" text-anchor="middle" fill="black" font-family="Arial" font-size="16" font-weight="bold">⚠</text>
+  
+  <rect x="520" y="415" width="25" height="25" fill="#FF6347"/>
+  <text x="532" y="435" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">STOP</text>
+  
+  <!-- Scaffolding -->
+  <rect x="270" y="150" width="6" height="250" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="276" y="180" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="276" y="220" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="276" y="260" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="276" y="300" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  
+  <rect x="520" y="170" width="6" height="230" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="500" y="200" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="500" y="240" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="500" y="280" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  <rect x="500" y="320" width="20" height="3" fill="#C0C0C0" opacity="0.8"/>
+  
+  <!-- Dust and atmospheric effects -->
+  <circle cx="400" cy="350" r="30" fill="#DDD8C0" opacity="0.3"/>
+  <circle cx="200" cy="480" r="25" fill="#CD853F" opacity="0.4"/>
+  <circle cx="600" cy="470" r="20" fill="#DDD8C0" opacity="0.3"/>
+  
+  <!-- Construction lights -->
+  <rect x="320" y="400" width="4" height="15" fill="#2F4F4F"/>
+  <circle cx="322" cy="395" r="6" fill="#FFD700" opacity="0.8"/>
+  
+  <rect x="480" y="400" width="4" height="15" fill="#2F4F4F"/>
+  <circle cx="482" cy="395" r="6" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Wispy clouds -->
+  <ellipse cx="150" cy="100" rx="60" ry="25" fill="white" opacity="0.6"/>
+  <ellipse cx="650" cy="120" rx="70" ry="30" fill="white" opacity="0.6"/>
+</svg>

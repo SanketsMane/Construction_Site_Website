@@ -1,0 +1,127 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="modernHouseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F8FF"/>
+      <stop offset="50%" style="stop-color:#E6E6FA"/>
+      <stop offset="100%" style="stop-color:#D8BFD8"/>
+    </linearGradient>
+    <linearGradient id="roofGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2F4F4F"/>
+      <stop offset="100%" style="stop-color:#1C1C1C"/>
+    </linearGradient>
+    <linearGradient id="landscapeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228B22"/>
+      <stop offset="100%" style="stop-color:#006400"/>
+    </linearGradient>
+    <linearGradient id="skyGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#F0F8FF"/>
+    </linearGradient>
+    <radialGradient id="poolGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#40E0D0"/>
+      <stop offset="100%" style="stop-color:#008B8B"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="350" fill="url(#skyGradient2)"/>
+  
+  <!-- Mountains in background -->
+  <polygon points="0,300 150,180 300,220 450,160 600,200 800,150 800,350 0,350" fill="#708090" opacity="0.6"/>
+  
+  <!-- Ground/Lawn -->
+  <rect y="350" width="800" height="250" fill="url(#landscapeGradient)"/>
+  
+  <!-- Modern house main structure -->
+  <rect x="200" y="200" width="400" height="200" fill="url(#modernHouseGradient)" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Modern flat roof -->
+  <rect x="190" y="190" width="420" height="20" fill="url(#roofGradient)"/>
+  
+  <!-- Second floor extension -->
+  <rect x="300" y="120" width="200" height="80" fill="url(#modernHouseGradient)" stroke="#C0C0C0" stroke-width="1"/>
+  <rect x="295" y="115" width="210" height="15" fill="url(#roofGradient)"/>
+  
+  <!-- Large modern windows -->
+  <rect x="220" y="230" width="80" height="120" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="320" y="230" width="60" height="120" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="400" y="230" width="80" height="120" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="500" y="250" width="80" height="100" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Second floor windows -->
+  <rect x="320" y="140" width="50" height="40" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="380" y="140" width="50" height="40" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  <rect x="440" y="140" width="50" height="40" fill="#4682B4" opacity="0.7" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Modern entrance -->
+  <rect x="350" y="300" width="60" height="100" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <rect x="365" y="320" width="30" height="80" fill="#2F4F4F"/>
+  <circle cx="395" cy="360" r="3" fill="#FFD700"/>
+  
+  <!-- Glass entrance overhang -->
+  <rect x="330" y="290" width="100" height="15" fill="#4682B4" opacity="0.3" stroke="#2F4F4F" stroke-width="1"/>
+  
+  <!-- Pool -->
+  <ellipse cx="650" cy="480" rx="120" ry="60" fill="url(#poolGradient)"/>
+  <ellipse cx="650" cy="475" rx="110" ry="50" fill="#40E0D0" opacity="0.8"/>
+  
+  <!-- Pool deck -->
+  <rect x="520" y="450" width="260" height="20" fill="#F5DEB3"/>
+  <rect x="520" y="470" width="260" height="80" fill="#F5DEB3"/>
+  
+  <!-- Modern landscaping -->
+  <circle cx="120" cy="420" r="40" fill="#228B22"/>
+  <circle cx="100" cy="400" r="25" fill="#32CD32"/>
+  <rect x="115" y="390" width="10" height="60" fill="#8B4513"/>
+  
+  <circle cx="720" cy="400" r="35" fill="#228B22"/>
+  <circle cx="700" cy="385" r="20" fill="#32CD32"/>
+  <rect x="715" y="375" width="8" height="50" fill="#8B4513"/>
+  
+  <!-- Modern pathway -->
+  <rect x="410" y="400" width="40" height="200" fill="#708090"/>
+  <rect x="420" y="410" width="4" height="180" fill="#C0C0C0"/>
+  <rect x="430" y="410" width="4" height="180" fill="#C0C0C0"/>
+  <rect x="440" y="410" width="4" height="180" fill="#C0C0C0"/>
+  
+  <!-- Driveway -->
+  <rect x="200" y="400" width="200" height="200" fill="#696969"/>
+  
+  <!-- Modern garage -->
+  <rect x="120" y="280" width="80" height="120" fill="url(#modernHouseGradient)" stroke="#C0C0C0" stroke-width="1"/>
+  <rect x="115" y="275" width="90" height="10" fill="url(#roofGradient)"/>
+  <rect x="135" y="320" width="50" height="80" fill="#2F4F4F"/>
+  
+  <!-- Solar panels on roof -->
+  <rect x="220" y="195" width="30" height="20" fill="#191970" opacity="0.8"/>
+  <rect x="260" y="195" width="30" height="20" fill="#191970" opacity="0.8"/>
+  <rect x="300" y="195" width="30" height="20" fill="#191970" opacity="0.8"/>
+  <rect x="340" y="195" width="30" height="20" fill="#191970" opacity="0.8"/>
+  
+  <!-- Modern outdoor furniture -->
+  <rect x="540" y="420" width="20" height="15" fill="#8B4513"/>
+  <rect x="570" y="420" width="20" height="15" fill="#8B4513"/>
+  <rect x="535" y="400" width="30" height="5" fill="#F5DEB3"/>
+  
+  <!-- Security cameras -->
+  <circle cx="580" cy="210" r="4" fill="#2F4F4F"/>
+  <rect x="578" y="206" width="4" height="8" fill="#2F4F4F"/>
+  
+  <!-- Modern lighting -->
+  <rect x="340" y="280" width="4" height="20" fill="#2F4F4F"/>
+  <circle cx="342" cy="275" r="6" fill="#FFD700" opacity="0.7"/>
+  
+  <rect x="420" y="280" width="4" height="20" fill="#2F4F4F"/>
+  <circle cx="422" cy="275" r="6" fill="#FFD700" opacity="0.7"/>
+  
+  <!-- Window reflections -->
+  <rect x="225" y="235" width="20" height="30" fill="white" opacity="0.3"/>
+  <rect x="325" y="235" width="15" height="30" fill="white" opacity="0.3"/>
+  <rect x="405" y="235" width="20" height="30" fill="white" opacity="0.3"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="200" cy="80" rx="40" ry="20" fill="white" opacity="0.8"/>
+  <ellipse cx="230" cy="75" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="600" cy="60" rx="50" ry="25" fill="white" opacity="0.8"/>
+  <ellipse cx="635" cy="55" rx="35" ry="18" fill="white" opacity="0.8"/>
+</svg>

@@ -1,0 +1,113 @@
+<!-- High Quality Placeholder for Project 3 - Luxury Villa -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="skyGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="villaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DDD8C4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="poolGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00CED1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0080B0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sunset Sky -->
+  <rect width="1200" height="350" fill="url(#skyGrad3)"/>
+  
+  <!-- Ground -->
+  <rect y="350" width="1200" height="450" fill="#228B22"/>
+  
+  <!-- Main Villa Structure -->
+  <rect x="200" y="200" width="500" height="300" fill="url(#villaGrad)" stroke="#D2B48C" stroke-width="2"/>
+  
+  <!-- Villa Roof -->
+  <polygon points="180,200 450,150 720,200 700,180 450,130 200,180" fill="url(#roofGrad)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Side Wing -->
+  <rect x="700" y="250" width="300" height="250" fill="url(#villaGrad)" stroke="#D2B48C" stroke-width="2"/>
+  <polygon points="680,250 850,200 1020,250 1000,230 850,180 700,230" fill="url(#roofGrad)" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Large Windows -->
+  <rect x="230" y="240" width="80" height="120" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <rect x="330" y="240" width="80" height="120" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <rect x="430" y="240" width="80" height="120" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <rect x="530" y="240" width="80" height="120" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  
+  <!-- Side Wing Windows -->
+  <rect x="730" y="280" width="70" height="100" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <rect x="820" y="280" width="70" height="100" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <rect x="910" y="280" width="70" height="100" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  
+  <!-- Window Frames -->
+  <g stroke="#4682B4" stroke-width="1" fill="none">
+    <line x1="270" y1="240" x2="270" y2="360"/>
+    <line x1="230" y1="300" x2="310" y2="300"/>
+    <line x1="370" y1="240" x2="370" y2="360"/>
+    <line x1="330" y1="300" x2="410" y2="300"/>
+    <line x1="470" y1="240" x2="470" y2="360"/>
+    <line x1="430" y1="300" x2="510" y2="300"/>
+    <line x1="570" y1="240" x2="570" y2="360"/>
+    <line x1="530" y1="300" x2="610" y2="300"/>
+  </g>
+  
+  <!-- Grand Entrance -->
+  <rect x="380" y="400" width="90" height="100" fill="#8B4513" stroke="#654321" stroke-width="3"/>
+  <ellipse cx="425" cy="400" rx="45" ry="15" fill="url(#roofGrad)"/>
+  
+  <!-- Columns -->
+  <rect x="350" y="380" width="15" height="120" fill="#F5F5DC" stroke="#D2B48C" stroke-width="1"/>
+  <rect x="485" y="380" width="15" height="120" fill="#F5F5DC" stroke="#D2B48C" stroke-width="1"/>
+  
+  <!-- Pool Area -->
+  <ellipse cx="900" cy="600" rx="150" ry="80" fill="url(#poolGrad)" stroke="#0080B0" stroke-width="3"/>
+  <ellipse cx="900" cy="590" rx="140" ry="70" fill="#00CED1" opacity="0.6"/>
+  
+  <!-- Pool Deck -->
+  <rect x="720" y="560" width="360" height="20" fill="#D2B48C"/>
+  <rect x="720" y="680" width="360" height="20" fill="#D2B48C"/>
+  
+  <!-- Garden Elements -->
+  <ellipse cx="150" cy="450" rx="80" ry="40" fill="#32CD32"/>
+  <ellipse cx="1050" cy="480" rx="60" ry="30" fill="#90EE90"/>
+  <ellipse cx="100" cy="550" rx="50" ry="25" fill="#98FB98"/>
+  
+  <!-- Luxury Trees -->
+  <rect x="80" y="380" width="15" height="100" fill="#8B4513"/>
+  <circle cx="87" cy="380" r="35" fill="#228B22"/>
+  
+  <rect x="1100" y="390" width="18" height="120" fill="#8B4513"/>
+  <circle cx="1109" cy="390" r="40" fill="#32CD32"/>
+  
+  <rect x="50" y="420" width="12" height="80" fill="#8B4513"/>
+  <circle cx="56" cy="420" r="28" fill="#90EE90"/>
+  
+  <!-- Driveway -->
+  <path d="M 0 520 Q 200 500 400 520 Q 600 540 800 520" stroke="#696969" stroke-width="20" fill="none"/>
+  
+  <!-- Luxury Car -->
+  <rect x="300" y="510" width="80" height="30" fill="#2C3E50" rx="5"/>
+  <circle cx="315" cy="540" r="8" fill="#34495E"/>
+  <circle cx="365" cy="540" r="8" fill="#34495E"/>
+  <rect x="310" y="515" width="60" height="15" fill="#85C1E9" opacity="0.8"/>
+  
+  <!-- Sun/Moon -->
+  <circle cx="150" cy="120" r="40" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="400" cy="100" rx="50" ry="25" fill="white" opacity="0.9"/>
+  <ellipse cx="430" cy="90" rx="40" ry="20" fill="white" opacity="0.9"/>
+  <ellipse cx="800" cy="80" rx="45" ry="22" fill="white" opacity="0.9"/>
+  
+  <!-- Text Overlay -->
+  <rect x="0" y="720" width="1200" height="80" fill="black" opacity="0.7"/>
+  <text x="600" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="white" font-weight="bold">Luxury Private Villa</text>
+  <text x="600" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#E0E0E0">Exclusive Design with Premium Amenities</text>
+</svg>
