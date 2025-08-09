@@ -20,7 +20,6 @@ const Contact: React.FC = () => {
     message: '',
     timeline: ''
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -34,14 +33,8 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    console.log('Form submitted:', formData);
     setIsSubmitting(false);
-    
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -52,7 +45,6 @@ const Contact: React.FC = () => {
       message: '',
       timeline: ''
     });
-    
     alert('Thank you for your message! We\'ll get back to you soon.');
   };
 
@@ -111,14 +103,14 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-white dark:bg-black transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">Create</span> Together
+          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-6">
+            Let's <span className="text-black dark:text-white">Create</span> Together
           </h2>
-          <p className="font-inter text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-inter text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Ready to bring your vision to life? We'd love to hear about your project and 
             explore how we can help you create something extraordinary.
           </p>
@@ -128,12 +120,11 @@ const Contact: React.FC = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-8">
             <div>
-              <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="font-playfair text-2xl font-bold text-black dark:text-white mb-6">
                 Get In Touch
               </h3>
-              <p className="font-inter text-gray-600 leading-relaxed mb-8">
-                Whether you're planning a new project or just have questions, 
-                we're here to help. Reach out through any of the channels below.
+              <p className="font-inter text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                Whether you're planning a new project or just have questions, we're here to help. Reach out through any of the channels below.
               </p>
             </div>
 
@@ -143,21 +134,21 @@ const Contact: React.FC = () => {
                 <div key={index} className="group">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent className="w-6 h-6 text-white" />
+                      <div className="w-12 h-12 bg-black dark:bg-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <IconComponent className="w-7 h-7 text-white dark:text-black" />
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-inter font-semibold text-gray-900 mb-2">
+                      <h4 className="font-inter font-semibold text-black dark:text-white mb-2">
                         {info.title}
                       </h4>
                       <div className="space-y-1">
                         {info.content.map((line, lineIndex) => (
-                          <p key={lineIndex} className="font-inter text-gray-600 text-sm">
+                          <p key={lineIndex} className="font-inter text-gray-700 dark:text-gray-300 text-sm">
                             {info.link && lineIndex === 0 ? (
                               <a
                                 href={info.link}
-                                className="hover:text-purple-600 transition-colors duration-300"
+                                className="hover:underline"
                                 target={info.link.startsWith('http') ? '_blank' : undefined}
                                 rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                               >
@@ -176,17 +167,17 @@ const Contact: React.FC = () => {
             })}
 
             {/* Social Links */}
-            <div className="pt-8 border-t border-gray-200">
-              <h4 className="font-inter font-semibold text-gray-900 mb-4">
+            <div className="pt-8 border-t border-gray-300 dark:border-gray-700">
+              <h4 className="font-inter font-semibold text-black dark:text-white mb-4">
                 Follow Our Journey
               </h4>
               <div className="flex space-x-4">
                 {['Instagram', 'LinkedIn', 'Twitter', 'Facebook'].map((social) => (
                   <button
                     key={social}
-                    className="w-10 h-10 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:border-purple-300 transition-all duration-300 group"
+                    className="w-10 h-10 bg-white dark:bg-black rounded-lg border border-gray-400 dark:border-gray-600 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-800 transition-all duration-300 group"
                   >
-                    <span className="text-sm font-medium text-gray-600 group-hover:text-purple-600 transition-colors duration-300">
+                    <span className="text-sm font-medium text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300">
                       {social.charAt(0)}
                     </span>
                   </button>
@@ -197,12 +188,12 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-10">
+            <div className="bg-white dark:bg-black rounded-2xl shadow-lg p-8 lg:p-10 transition-colors duration-300">
               <div className="mb-8">
-                <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="font-playfair text-2xl font-bold text-black dark:text-white mb-2">
                   Start Your Project
                 </h3>
-                <p className="font-inter text-gray-600">
+                <p className="font-inter text-gray-700 dark:text-gray-300">
                   Tell us about your vision and we'll get back to you within 24 hours.
                 </p>
               </div>
@@ -211,11 +202,11 @@ const Contact: React.FC = () => {
                 {/* Basic Information */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Full Name *
                     </label>
                     <div className="relative">
-                      <UserIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <UserIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="text"
                         id="name"
@@ -223,18 +214,17 @@ const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                         placeholder="Your full name"
                       />
                     </div>
                   </div>
-
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Email Address *
                     </label>
                     <div className="relative">
-                      <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="email"
                         id="email"
@@ -242,7 +232,7 @@ const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -251,46 +241,44 @@ const Contact: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Phone Number
                     </label>
                     <div className="relative">
-                      <PhoneIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <PhoneIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="tel"
                         id="phone"
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                         placeholder="+91 98765 43210"
                       />
                     </div>
                   </div>
-
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="company" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Company/Organization
                     </label>
                     <div className="relative">
-                      <BuildingOfficeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                      <BuildingOfficeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
                       <input
                         type="text"
                         id="company"
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                         placeholder="Your company name"
                       />
                     </div>
                   </div>
                 </div>
-
                 {/* Project Details */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
-                    <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="projectType" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Project Type *
                     </label>
                     <select
@@ -299,7 +287,7 @@ const Contact: React.FC = () => {
                       value={formData.projectType}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                     >
                       <option value="">Select type</option>
                       {projectTypes.map((type) => (
@@ -307,9 +295,8 @@ const Contact: React.FC = () => {
                       ))}
                     </select>
                   </div>
-
                   <div>
-                    <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="budget" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Budget Range
                     </label>
                     <select
@@ -317,7 +304,7 @@ const Contact: React.FC = () => {
                       name="budget"
                       value={formData.budget}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                     >
                       <option value="">Select budget</option>
                       {budgetRanges.map((range) => (
@@ -325,9 +312,8 @@ const Contact: React.FC = () => {
                       ))}
                     </select>
                   </div>
-
                   <div>
-                    <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="timeline" className="block text-sm font-medium text-black dark:text-white mb-2">
                       Timeline
                     </label>
                     <select
@@ -335,7 +321,7 @@ const Contact: React.FC = () => {
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white"
                     >
                       <option value="">Select timeline</option>
                       {timelines.map((time) => (
@@ -344,10 +330,9 @@ const Contact: React.FC = () => {
                     </select>
                   </div>
                 </div>
-
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-black dark:text-white mb-2">
                     Project Description *
                   </label>
                   <textarea
@@ -357,23 +342,24 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-gray-400 dark:border-gray-700 rounded-lg bg-white dark:bg-black focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300 text-black dark:text-white resize-none"
                     placeholder="Tell us about your project vision, requirements, and any specific details you'd like us to know..."
                   ></textarea>
                 </div>
-
                 {/* Submit Button */}
                 <div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
-                      isSubmitting ? 'opacity-75 cursor-not-allowed' : 'hover:from-purple-700 hover:to-blue-700'
+                    className={`w-full flex items-center justify-center px-8 py-4 bg-black dark:bg-white text-white dark:text-black font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                      isSubmitting
+                        ? 'opacity-75 cursor-not-allowed'
+                        : 'hover:bg-gray-900 dark:hover:bg-gray-100'
                     }`}
                   >
                     {isSubmitting ? (
                       <div className="flex items-center space-x-2">
-                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        <div className="w-5 h-5 border-2 border-white dark:border-black border-t-transparent rounded-full animate-spin"></div>
                         <span>Sending...</span>
                       </div>
                     ) : (

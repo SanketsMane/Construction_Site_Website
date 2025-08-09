@@ -165,7 +165,7 @@ const ProjectsSlider: React.FC = () => {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % filteredProjects.length);
-    }, 4000); // Change slide every 4 seconds
+    }, 3000); // Change slide every 4 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, filteredProjects.length]);
@@ -417,3 +417,4 @@ const ProjectsSlider: React.FC = () => {
 };
 
 export default ProjectsSlider;
+

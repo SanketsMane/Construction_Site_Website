@@ -400,6 +400,7 @@ const Projects: React.FC = () => {
       </div>
     </section>
   );
-};
+}
+
 
 export default Projects;

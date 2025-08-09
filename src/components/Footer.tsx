@@ -6,6 +6,7 @@ import {
   ArrowUpIcon
 } from '@heroicons/react/24/outline';
 import VisitorCounter from './VisitorCounter';
+import WhatsAppIcon from './WhatsAppIcon'; // <-- ADDED
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -22,10 +23,9 @@ const Footer: React.FC = () => {
   const footerLinks = {
     services: [
       { name: 'Architectural Design', href: '#' },
-      { name: 'Interior Design', href: '#' },
-      { name: 'Urban Planning', href: '#' },
-      { name: 'Project Management', href: '#' },
-      { name: 'Consultation', href: '#' }
+      { name: 'construction', href: '#' },
+      { name: 'JD & Developments', href: '#' },
+      
     ],
     company: [
       { name: 'About Us', action: () => scrollToSection('about') },
@@ -44,6 +44,7 @@ const Footer: React.FC = () => {
   };
 
   const socialLinks = [
+    { name: 'WhatsApp', href: 'https://wa.me/919999999999', icon: 'WA', isWhatsApp: true }, // <-- ADDED
     { name: 'Instagram', href: '#', icon: 'IG' },
     { name: 'LinkedIn', href: '#', icon: 'LI' },
     { name: 'Twitter', href: '#', icon: 'TW' },
@@ -55,7 +56,7 @@ const Footer: React.FC = () => {
     {
       icon: MapPinIcon,
       title: 'Address',
-      content: '123 Design District, Mumbai, Maharashtra 400001, India'
+      content: '123 Design District,Banglore 400001, India'
     },
     {
       icon: PhoneIcon,
@@ -70,13 +71,13 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white relative">
+    <footer className="bg-gray-900 dark:bg-black text-white transition-colors duration-300 relative">
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center hover:from-purple-700 hover:to-blue-700 transition-all duration-300 hover:scale-110 shadow-lg"
+        className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-black dark:bg-white rounded-full flex items-center justify-center hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 hover:scale-110 shadow-lg"
       >
-        <ArrowUpIcon className="w-6 h-6 text-white" />
+        <ArrowUpIcon className="w-6 h-6 text-white dark:text-black" />
       </button>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
@@ -88,7 +89,7 @@ const Footer: React.FC = () => {
               <h3 className="font-playfair text-2xl font-bold mb-4">
                 Impress Imagination
               </h3>
-              <p className="font-inter text-gray-300 leading-relaxed mb-6">
+              <p className="font-inter text-gray-300 dark:text-gray-400 leading-relaxed mb-6">
                 Transforming visionary concepts into extraordinary architectural experiences 
                 that inspire, captivate, and endure.
               </p>
@@ -100,12 +101,12 @@ const Footer: React.FC = () => {
                 const IconComponent = info.icon;
                 return (
                   <div key={index} className="flex items-start space-x-3">
-                    <IconComponent className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <IconComponent className="w-5 h-5 text-gray-400 dark:text-gray-500 mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-inter text-sm font-medium text-gray-200 mb-1">
+                      <p className="font-inter text-sm font-medium text-gray-200 dark:text-gray-300 mb-1">
                         {info.title}
                       </p>
-                      <p className="font-inter text-sm text-gray-400">
+                      <p className="font-inter text-sm text-gray-400 dark:text-gray-500">
                         {info.content}
                       </p>
                     </div>
@@ -123,7 +124,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="font-inter text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm"
+                    className="font-inter text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </a>
@@ -141,14 +142,14 @@ const Footer: React.FC = () => {
                   {link.action ? (
                     <button
                       onClick={link.action}
-                      className="font-inter text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm text-left"
+                      className="font-inter text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors duration-300 text-sm text-left"
                     >
                       {link.name}
                     </button>
                   ) : (
                     <a
                       href={link.href}
-                      className="font-inter text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm"
+                      className="font-inter text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </a>
@@ -166,7 +167,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="font-inter text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm"
+                    className="font-inter text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </a>
@@ -181,9 +182,9 @@ const Footer: React.FC = () => {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white placeholder-gray-400"
+                  className="flex-1 px-3 py-2 bg-gray-800 dark:bg-gray-900 border border-gray-700 dark:border-gray-600 rounded-lg text-sm focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 focus:border-transparent text-white placeholder-gray-400"
                 />
-                <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm font-medium rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300">
+                <button className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300">
                   Subscribe
                 </button>
               </div>
@@ -191,9 +192,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Social Links & Awards */}
-                {/* Social Links, Awards & Visitor Counter */}
-        <div className="border-t border-gray-800 pt-8 mb-8">
+        {/* Social Links, Awards & Visitor Counter */}
+        <div className="border-t border-gray-800 dark:border-gray-700 pt-8 mb-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             {/* Social Links */}
             <div>
@@ -205,13 +205,22 @@ const Footer: React.FC = () => {
                   <a
                     key={index}
                     href={social.href}
-                    className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-800 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-700 dark:border-gray-600"
                   >
-                    <span className="text-white text-xs font-bold">
-                      {social.icon}
-                    </span>
+                    {social.isWhatsApp ? (
+                      <div className="w-5 h-5">
+                        <WhatsAppIcon />
+                      </div>
+                    ) : (
+                      <span className="text-white dark:text-gray-200 text-xs font-bold">
+                        {social.icon}
+                      </span>
+                    )}
                   </a>
-                ))}
+                ))
+                }
               </div>
             </div>
 
@@ -227,19 +236,19 @@ const Footer: React.FC = () => {
               </h5>
               <div className="flex space-x-6 justify-center lg:justify-end items-center">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-gray-600 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-sm">★</span>
                   </div>
                   <p className="text-xs text-gray-400">Design Awards</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-gray-600 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-sm">♻</span>
                   </div>
                   <p className="text-xs text-gray-400">Green Building</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-gray-600 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-2 transform hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-sm">✓</span>
                   </div>
                   <p className="text-xs text-gray-400">ISO Certified</p>
@@ -250,18 +259,18 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-gray-800 dark:border-gray-700 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-400">
               <p>&copy; 2023 Impress Imagination. All rights reserved.</p>
               <div className="flex space-x-4">
-                <button className="hover:text-purple-400 transition-colors duration-300">
+                <button className="hover:text-white dark:hover:text-white transition-colors duration-300">
                   Privacy Policy
                 </button>
-                <button className="hover:text-purple-400 transition-colors duration-300">
+                <button className="hover:text-white dark:hover:text-white transition-colors duration-300">
                   Terms of Service
                 </button>
-                <button className="hover:text-purple-400 transition-colors duration-300">
+                <button className="hover:text-white dark:hover:text-white transition-colors duration-300">
                   Cookie Policy
                 </button>
               </div>
